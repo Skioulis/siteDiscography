@@ -1,10 +1,15 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "siteDiscography",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Monorepo for Site Discography: frontend and backend",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "private": true
+    "start:backend": "npm --workspace backend run start",
+    "start:frontend": "npm --workspace frontend run start",
+    "start": "echo \"Use npm run start:backend or npm run start:frontend\""
+  }
 }
