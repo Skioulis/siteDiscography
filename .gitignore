@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+bower_components/
+
+# Builds and caches
+dist/
+build/
+.out/
+.next/
+.nuxt/
+.cache/
+.tmp/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Logs and diagnostics
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+*.log
+
+# Environment and local config
+.env
+.env.*.local
+*.local
+.env.local
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Lockfiles (optional to ignore in libraries; keep in apps)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Misc
+coverage-final.json
+typedoc/
+.eslintcache
+
+# Monorepo/workspaces (optional)
+# Ignore nested node_modules if checking in subpackages
+**/node_modules/
+**/dist/
+**/build/
