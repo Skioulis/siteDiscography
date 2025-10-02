@@ -57,3 +57,5 @@ typedoc/
 **/node_modules/
 **/dist/
 **/build/
+/ideaSources/databaseOld/Βάσεις.accdb
+/ideaSources/databaseOld/New Database.odb
