@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", async (req, res) => {
-    res.status(200).json({ message: "Hello World!" });
+    res.status(200).json({ message: "Hello World! from backend" });
 });
 
 app.listen(port, () => {
