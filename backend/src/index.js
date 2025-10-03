@@ -3,11 +3,13 @@ import bodyParser from "body-parser";
 import pg from "pg";
 // import session from "express-session";
 import env from "dotenv";
+import cors from "cors";
 
 const app = express();
 const port = 3000;
 env.config();
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 

@@ -11,7 +11,7 @@ export default function Message() {
             try {
                 const res = await fetch('http://localhost:3000/');
                 const data = await res.json();
-                console.log(data);
+                // console.log(data);
                 if (isMounted) setMessage(data?.message ?? 'No message');
             } catch (e) {
                 if (isMounted) setMessage('Failed to load message');
