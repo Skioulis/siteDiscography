@@ -11,8 +11,8 @@ env.config();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
+app.get("/", async (req, res) => {
+    res.status(200).json({ message: "Hello World!" });
 });
 
 app.listen(port, () => {
